@@ -170,7 +170,6 @@ footer {
 }
 
 .footer-wrapper {
-    /* background-color: aqua; */
     margin: 0 auto;
     color: white;
     text-align: center;
@@ -198,7 +197,6 @@ hr {
     margin: 0 auto;
     width: 20%;
     font-size: 32px;
-    /* margin: 30px 0px; */
     display: flex;
     justify-content: space-between;
 }
