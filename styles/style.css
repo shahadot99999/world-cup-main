@@ -74,12 +74,7 @@ header {
 }
 
 /* Plyer show  grid sytem start  */
-player-container {
-    display: flex;
-    align-items: stretch;
-    height: 300px;
 
-}
 
 a {
     text-decoration: none;
@@ -91,7 +86,7 @@ li {
     list-style: none;
 }
 
-.Player-livecastarea {
+.player-livecastarea {
     display: flex;
     justify-content: space-evenly;
     margin: 5em 0;
@@ -211,6 +206,51 @@ hr {
     header {
         flex-direction: column;
     }
+
+    .header-description {
+        width: 80%;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .header-description h1 {
+        font-size: 36px;
+    }
+
+    .header-description p {
+        /* position: relative; */
+        /* width: 400px; */
+        height: 40px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    main {
+        flex-direction: column;
+        margin: 0px;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .players-1 {
+        background-color: transparent;
+        padding: 0px;
+    }
+
+    .player-livecastarea {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 30px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+
+    .social-icon {
+        width: 60%;
+    }
 }
 
 
@@ -239,19 +279,35 @@ hr {
 
     .players-1 {
 
-        height: 80px;
-        flex-direction: row;
-        align-items: center;
-        background-color: transparent;
-        padding: 0px;
-        gap: 80px;
+        width: 100%;
+        height: 100%;
 
+    }
+
+    .player-1 ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .player-1 ul li {
+        height: 3em;
+        width: 10em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .player-1 ul li a {
+        font-size: 1rem;
     }
 
     .Player-livecastarea {
         grid-template-columns: repeat(2, 1fr);
         margin-bottom: 30px;
     }
+
 
     .footer-menu {
         flex-wrap: wrap;
