@@ -20,6 +20,9 @@ body {
 
 }
 
+/* Animation */
+
+
 /* Banner Style */
 header {
     display: flex;
@@ -45,12 +48,10 @@ header {
     color: rgb(192, 192, 192);
 }
 
-
 /* Button Create  */
 
 .button,
-.watch-live,
-.view-all {
+.watch-live {
     border: none;
     border-radius: 5px;
     background-color: rgb(211, 57, 57);
@@ -58,9 +59,7 @@ header {
 }
 
 /* main section start  */
-container-1 {
-    background-color: black;
-}
+
 
 .white-button {
     text-decoration: none;
@@ -94,7 +93,7 @@ li {
 
 .Player-livecastarea {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 5em 0;
 
 }
@@ -159,7 +158,10 @@ h3 {
     justify-content: space-between;
 }
 
+
 /* Plyer show  grid sytem end  */
+
+
 
 /* Footer Start  */
 
@@ -202,3 +204,57 @@ hr {
 }
 
 /* Footer End  */
+
+/* Mobile view */
+
+@media screen and (max-width : 590px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+
+/* Tab view */
+/* Tab View */
+@media only screen and (min-width : 834px) and (max-width : 1080px) {
+    header {
+        margin: 10px;
+    }
+
+    .header-image img {
+        width: 26em;
+        height: 26em;
+    }
+
+    .header-description {
+        padding: 40px 0px 20px 40px;
+    }
+
+    main {
+        flex-direction: column;
+        margin: 0px;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .players-1 {
+
+        height: 80px;
+        flex-direction: row;
+        align-items: center;
+        background-color: transparent;
+        padding: 0px;
+        gap: 80px;
+
+    }
+
+    .Player-livecastarea {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 30px;
+    }
+
+    .footer-menu {
+        flex-wrap: wrap;
+    }
+
+}
