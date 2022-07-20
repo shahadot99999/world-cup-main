@@ -11,29 +11,50 @@
 /* Common style or utilities  */
 body {
     font-family: 'Poppins', sans-serif;
-    background: #ffffff;
+    background-color: #fff;
+    color: #000;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+
 
 }
 
-.container {
+/* Banner Style */
+header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: black;
     color: white;
+    margin: 50px 0px 0px 0px;
     border-radius: 20px;
-
-
 }
 
-/* h1 {
-    color: white;
-} */
+.header-description {
+    width: 40%;
+    padding: 80px;
+}
+
+.header-description h1 {
+    font-size: 42px;
+    margin: 0px;
+}
+
+.header-description p {
+    color: rgb(192, 192, 192);
+}
+
 
 /* Button Create  */
-.btn {
-    text-decoration: none;
-    background-image: red;
-    padding: 10px 40px;
+
+.button,
+.watch-live,
+.view-all {
+    border: none;
     border-radius: 5px;
+    background-color: rgb(211, 57, 57);
+    padding: 10px 24px;
 }
 
 /* main section start  */
@@ -54,12 +75,64 @@ container-1 {
 }
 
 /* Plyer show  grid sytem start  */
+player-container {
+    display: flex;
+    align-items: stretch;
+    height: 300px;
+
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+
+li {
+    list-style: none;
+}
+
+.Player-livecastarea {
+    display: flex;
+    justify-content: space-between;
+    margin: 5em 0;
+
+}
+
+.players-1 {
+    background: #161616;
+    color: #fff;
+    padding: 2em;
+    border-radius: 7px;
+    width: 312px;
+    height: 312px;
+
+}
 
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 24px;
 }
+
+.upcoming {
+    background-color: white;
+    width: 252px;
+    height: 64px;
+    padding: 10%;
+    font-size: 20px;
+}
+
+.active {
+    background-color: red;
+    color: white;
+    width: 252px;
+    height: 64px;
+    padding: 10%;
+    font-size: 20px;
+}
+
+
 
 .player {
     width: 312px;
@@ -87,3 +160,47 @@ h3 {
 }
 
 /* Plyer show  grid sytem end  */
+
+/* Footer Start  */
+
+footer {
+    background: #000000;
+    margin: 0 -9999rem;
+    padding: 0.25rem 9999rem;
+}
+
+.footer-wrapper {
+    /* background-color: aqua; */
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: gray;
+}
+
+hr {
+    margin: 50px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu a {
+    margin: 30px;
+}
+
+.social-icon {
+    margin: 0 auto;
+    width: 20%;
+    font-size: 32px;
+    /* margin: 30px 0px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Footer End  */
