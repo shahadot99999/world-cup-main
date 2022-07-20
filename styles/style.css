@@ -35,3 +35,55 @@ body {
     padding: 10px 40px;
     border-radius: 5px;
 }
+
+/* main section start  */
+container-1 {
+    background-color: black;
+}
+
+.white-button {
+    text-decoration: none;
+    background-color: aliceblue;
+
+}
+
+.red-button {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+}
+
+/* Plyer show  grid sytem start  */
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.player {
+    width: 312px;
+    height: 342px;
+    border-radius: 5px solid rgb(192, 191, 191);
+}
+
+h3 {
+    border: 1px solid rgb(194, 193, 193);
+    width: 50%;
+    padding: 5px 5px;
+
+}
+
+.player-image {
+    width: 312px;
+    height: 166px;
+    border-radius: 10px 0px;
+}
+
+.player-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Plyer show  grid sytem end  */
