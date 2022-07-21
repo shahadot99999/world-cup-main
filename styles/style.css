@@ -20,7 +20,31 @@ body {
 
 }
 
+
+
 /* Animation */
+
+@keyframes arrow {
+    0% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(10px) scale(1);
+    }
+
+    75% {
+        opacity: 1;
+        transform: translateX(-10px) scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
 
 
 /* Banner Style */
@@ -54,42 +78,70 @@ header {
 .watch-live {
     border: none;
     border-radius: 5px;
-    background-color: rgb(211, 57, 57);
+    background-color: rgb(255, 0, 0);
     padding: 10px 24px;
+    transition: width 10s
+}
+
+
+
+.button .fa-angle-right {
+    font-size: 18px;
+    color: white;
+    padding-left: 20px;
+    animation: arrow .5s linear 0s infinite;
+}
+
+
+
+
+
+/* another html group  file css  */
+.group {
+
+    border: 1px solid gray;
+    border-radius: 15px;
+    box-shadow: 14px 20px 50px -13px rgba(0, 0, 0, 0.375);
+
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.match {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.match-between {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.match-details {
+    text-align: center;
+}
+
+article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    flex-grow: 2;
 }
 
 /* main section start  */
-
-
-.white-button {
-    text-decoration: none;
-    background-color: aliceblue;
-
-}
-
-.red-button {
-    text-decoration: none;
-    background-color: red;
-    color: white;
-}
-
-/* Plyer show  grid sytem start  */
-
-
-a {
-    text-decoration: none;
-    color: #000;
-    display: inline-block;
-}
-
-li {
-    list-style: none;
-}
+/* Main Plyer show  grid sytem start  */
 
 .player-livecastarea {
     display: flex;
     justify-content: space-evenly;
     margin: 5em 0;
+
 
 }
 
@@ -233,12 +285,16 @@ hr {
         gap: 0px;
     }
 
-    .players-1 {
+    nav {
+        height: 80px;
+        flex-direction: row;
+        align-items: center;
         background-color: transparent;
         padding: 0px;
+        gap: 80px;
     }
 
-    .player-livecastarea {
+    article {
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 30px;
     }
